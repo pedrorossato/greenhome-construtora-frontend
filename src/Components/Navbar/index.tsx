@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Li, Logo, MenuIcon, Nav, StyledLink, Ul } from './styles';
-import LogoColorida from '../../Assets/Logo.png'
+import LogoColorida from '../../Assets/Images/Logo.png'
 import { FaBars,FaTimes } from 'react-icons/fa';
 import { Link } from 'react-router-dom';
 import { Colors } from '../../Styles/colors';

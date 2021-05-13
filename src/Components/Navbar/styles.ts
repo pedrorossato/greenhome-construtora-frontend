@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   display:flex;
   justify-content:center;
   align-items:center;
-  font-size:1.2rem;
+  font-size:1.3rem;
   border-bottom:10px solid ${Colors.secondary.green};
   @media screen and (max-width:960px){
     position: relative;
@@ -101,7 +101,8 @@ export const StyledLink = styled(Link)`
     ${props=>{
         if(props['aria-checked']){
             return `
-              background-color: ${Colors.primary.green}
+            color: ${Colors.common.white};
+            background-color: ${Colors.primary.green}
             `;
         }
     }}
