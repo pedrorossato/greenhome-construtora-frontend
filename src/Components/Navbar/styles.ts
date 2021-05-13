@@ -8,7 +8,7 @@ export const Nav = styled.nav`
   display:flex;
   justify-content:center;
   align-items:center;
-  font-size:1.3rem;
+  font-size:1.35rem;
   border-bottom:10px solid ${Colors.secondary.green};
   @media screen and (max-width:960px){
     position: relative;

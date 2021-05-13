@@ -17,6 +17,7 @@ export default createGlobalStyle`
   }
   body {
     background-color:${Colors.primary.green};
+    color:${Colors.common.white};
   }
   body, input, button {
     font-family: 'Engravers Gothic Regular', sans-serif;
