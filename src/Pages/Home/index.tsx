@@ -1,7 +1,7 @@
-import React from 'react'
-import Logo from '../../Assets/Logo.png'
+import React from 'react';
+import LogoFundoBranco from '../../Assets/Images/LogoFundoBranco.jpeg';
 import Navbar from '../../Components/Navbar';
-import { Container, Title } from './styles';
+import { AboutImage, Container, Title } from './styles';
 
 const Home: React.FC = () => {
   return (
@@ -9,9 +9,10 @@ const Home: React.FC = () => {
       <Navbar/>
       <Container>
         <Title>
-          <h1>GreenHome</h1>
-          <p>Construtora e Incorporadora</p>
+          <h1>Sobre nós</h1>
+          <p>A Green Home Construtora e Incorporadora surgiu no ano de 2019 </p>
         </Title>
+        <AboutImage src={LogoFundoBranco}/>
       </Container>
     </>
   );
