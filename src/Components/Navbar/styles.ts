@@ -3,27 +3,29 @@ import styled from 'styled-components';
 import { Colors } from "../../Styles/colors";
 
 export const Nav = styled.nav`
-  background: ${Colors.common.white};
+  background: ${Colors.common.wheat};
   height:100px;
+  width:100%;
   display:flex;
   justify-content:center;
   align-items:center;
   font-size:1.35rem;
-  border-bottom:10px solid ${Colors.secondary.green};
-  @media screen and (max-width:960px){
+  border-bottom:10px solid ${Colors.secondary.blue};
+  position: fixed;
+  /* @media screen and (max-width:960px){
     position: relative;
-  }
+  } */
 `;
 
 export const Logo = styled.img`
     height:100%;
     justify-self:start;
     cursor:pointer;
-    @media screen and (max-width:960px){
+    /* @media screen and (max-width:960px){
         position:absolute;
         top:0;
         left:10px;
-    }
+    } */
 `;
 
 export const MenuIcon = styled.div`
@@ -88,7 +90,7 @@ export const StyledLink = styled(Link)`
       background-color: ${Colors.primary.green}
     }
     text-decoration:none;
-    color: ${Colors.common.black};
+    color: ${Colors.secondary.blue};
     border-radius:4px;
     transition:all 0.4s ease-out;
     padding:0.5rem 1rem;

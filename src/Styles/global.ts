@@ -1,11 +1,11 @@
 import {createGlobalStyle } from 'styled-components';
 import { Colors } from './colors';
-import EngraversGothicRegular from '../Assets/Fonts/EngraversGothicRegular.otf';
+import NewsGothic from '../Assets/Fonts/news-gothic.otf';
 
 export default createGlobalStyle`
   @font-face {
-    font-family: 'Engravers Gothic Regular';
-    src: local('Engravers Gothic Regular'), url(${EngraversGothicRegular}) format('truetype');
+    font-family: 'News Gothic';
+    src: local('News Gothic'), url(${NewsGothic}) format('truetype');
     font-size: 300;
     font-style: normal;
   }
@@ -16,11 +16,9 @@ export default createGlobalStyle`
     box-sizing: border-box
   }
   body {
-    background-color:${Colors.primary.green};
-    color:${Colors.common.white};
   }
   body, input, button {
-    font-family: 'Engravers Gothic Regular', sans-serif;
+    font-family: 'News Gothic', sans-serif;
   }
   button {
     cursor: pointer;

@@ -14,30 +14,33 @@ const Navbar: React.FC<INavBarProps> = ({ active }) => {
     setClicked(!clicked);
   };
   return (
-    <Nav>
-      <Link style={{ height: '100%' }} to="/">
-        <Logo src={LogoColorida}></Logo>
-      </Link>
-      <MenuIcon onClick={handleClickMenuIcon}>
-        {clicked ? (
-          <FaTimes style={{ color:`${Colors.common.black}` }} />
-        ) : (
-          <FaBars style={{ color: `${Colors.common.black}` }} />
-        )}
-      </MenuIcon>
-      <Ul className={clicked ? 'active' : ''}>
-        <Li>
+    <>
+      <Nav>
+        <Link style={{ height: '100%' }} to="/">
+          <Logo src={LogoColorida}></Logo>
+        </Link>
+        {/* <MenuIcon onClick={handleClickMenuIcon}>
+          {clicked ? (
+            <FaTimes style={{ color:`${Colors.common.black}` }} />
+          ) : (
+            <FaBars style={{ color: `${Colors.common.black}` }} />
+          )}
+        </MenuIcon> */}
+        {/* <Ul className={clicked ? 'active' : ''}>
+          <Li>
           <StyledLink aria-checked={active === 'Construcoes'} to="/Construcoes">
-            Construções
-          </StyledLink>
-        </Li>
-        <Li>
+              Construções
+            </StyledLink>
+          </Li>
+          <Li>
           <StyledLink aria-checked={active === 'Contato'} to="/Contato">
-            Contato
-          </StyledLink>
-        </Li>
-      </Ul>
-    </Nav>
+          Contato
+            </StyledLink>
+            </Li>
+        </Ul> */}
+      </Nav>
+      <div style={{height: '100px'}}></div>
+    </>    
   );
 }
 
