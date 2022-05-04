@@ -17,11 +17,15 @@ export const Container = styled.div`
   width: 100%;
   max-width: 960px;
   display:flex;
-  justify-content:center;
+  flex-direction: row;
+  justify-content:flex-start;
   align-items:center;
   flex-direction:column;
   text-align:center;
   margin:0 auto;
+  @media(max-width: 960px) {
+    flex-direction: column;
+  }
 `;
 
 export const Title = styled.div`
@@ -33,4 +37,8 @@ export const Title = styled.div`
   @media screen and (max-width: 960px) {
     font-size:1.5rem
   }
+`;
+
+export const AboutImage = styled.img`
+  height: 200px;
 `;
